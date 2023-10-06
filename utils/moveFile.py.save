@@ -1,0 +1,50 @@
+# encoding: utf-8
+"""
+@author: Young
+@contact: 1830839103@qq.com
+@file: moveFile.py
+@time: 2021/7/9 13:38
+@desc:
+    移动文件
+"""
+import os
+import shutil
+
+
+def moveFile(Dir = "../data/kaist-rgbt-yolo/annotations/"):
+    for dirname, _, filenames in os.walk(Dir):
+        for filename in filenames:
+            s = os.path.join(dirname, filename)
+            inputFileName = s.replace("/", " ").replace("\\", " ").replace(" ", "/")
+            print(inputFileName)
+            # outputFileName = s.replace("/", " ").replace("\\", " ").replace("kaist-rgbt", "kaist-rgbt-yolo").replace(" ", "/")
+            if int(inputFileName.split("/")[-1].split(".")[0][1:]) < 1600:
+                outputFileName = "/".join(inputFileName.split("/")[:-4]) +"/lwir" + "/" + "train/"+"labels/" + "_".join(inputFileName.split("/")[-3:-1])+"_lwir_"+inputFileName.split("/")[-1]
+                # shutil.move(inputFileName, outputFileName)
+                print(f"train:{outputFileName}")
+            elif int(inputFileName.split("/")[-1].split(".")[0][1:]) <=2200:
+                outputFileName = "/".join(inputFileName.split("/")[:-4]) +"/lwir"+ "/" + "val/" + "labels/" + "_".join(inputFileName.split("/")[-3:-1])+"_lwir_"+inputFileName.split("/")[-1]
+                # shutil.move(inputFileName, outputFileName)
+                print(f"val:{outputFileName}")
+            else:
+                outputFileName = "/".join(inputFileName.split("/")[:-4]) +"/lwir"+ "/" + "test/" + "labels/" + "_".join(inputFileName.split("/")[-3:-1])+"_lwir_"+"_"+ inputFileName.split("/")[-1]
+                # shutil.move(inputFileName, outputFileName)
+                print("test:{}".format(outputFileNam))
+
+def renameFile(Dir):
+    for dirname, _, filenames in os.walk(Dir):
+        for filename in filenames:
+            s = os.path.join(dirname, filename)
+            inputFileName = s.replace("/", " ").replace("\\", " ").replace(" ", "/")
+            if inputFileName.endswith("jpg"):
+                # ../ data / kaist - rgbt - yolo / lwir / val / labels / set00_V000_I01600.txt
+                # ../data/kaist-rgbt-yolo/lwir/val/images/images_set11_V000_lwir_I02019.jpg
+                outputFileName = "/".join(inputFileName.split("/")[:-1]) +\
+                    "/"+inputFileName.split("/")[-1].replace("images_", "")
+
+                os.rename(inputFileName, outputFileName)
+
+moveFile()
+# renameFile("../data/kaist-rgbt-yolo/lwir")
+
+
