@@ -2,7 +2,7 @@
 Created by Jiacheng Li, School of Automation Engineering, University of Electronic Science and Technology of China.
 ## Run
 ### Weight Preparation
-To prepare the model weights, you can download them from the official website:[Google Drive](https://github.com/ultralytics/yolov5) or [BaiduYun](https://pan.baidu.com/s/1iUBV7VL5fLOBWaV-MvRM5g?pwd=boqs)
+To prepare the model weights, you can download them from the official website: [Google Drive](https://github.com/ultralytics/yolov5) or [BaiduYun](https://pan.baidu.com/s/1iUBV7VL5fLOBWaV-MvRM5g?pwd=boqs)
 ### Environment
 To set up the Python environment for this project, you can use the following command:
 
