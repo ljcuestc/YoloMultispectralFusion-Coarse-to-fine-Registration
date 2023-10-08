@@ -51,7 +51,7 @@ def detect(save_img=False):
 
 
     save_dir = Path(increment_path(Path(opt.project) / opt.name, exist_ok=opt.exist_ok))  # increment run
-    # (save_dir / 'labels' if save_txt else save_dir).mkdir(parents=True, exist_ok=True)  # make dir
+    (save_dir if save_txt else save_dir).mkdir(parents=True, exist_ok=True)  # make dir
 
     # save_dir_ir_txt = os.path.join(os.path.abspath(os.path.join(save_dir_fusion_txt,"..")),'detection_ir_txt')
     # save_dir_vis_txt = os.path.join(os.path.abspath(os.path.join(save_dir_fusion_txt,"..")),'detection_vis_txt')
