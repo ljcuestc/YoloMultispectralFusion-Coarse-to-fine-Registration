@@ -1,5 +1,5 @@
 # YoloMultispectralFusion-Coarse-to-fine-Registration
-Created by Jiacheng Li, School of Automation Engineering, University of Electronic Science and Technology of China.
+Created by Jiacheng Li, School of Automation Engineering, University of Electronic Science and Technology of China.  
 Contact: jiacheng_li@std.uestc.edu.cn
 ## Run
 ### Weight Preparation
