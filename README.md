@@ -1,5 +1,6 @@
 # YoloMultispectralFusion-Coarse-to-fine-Registration
 Created by Jiacheng Li, School of Automation Engineering, University of Electronic Science and Technology of China.
+Contact: jiacheng_li@std.uestc.edu.cn
 ## Run
 ### Weight Preparation
 To prepare the model weights, you can download them from the official website: [Google Drive](https://drive.google.com/drive/folders/1Zxg4KORjy6h279bDqUCb7C3tw93Qxn-x?usp=drive_link) or [BaiduYun](https://pan.baidu.com/s/1iUBV7VL5fLOBWaV-MvRM5g?pwd=boqs)
