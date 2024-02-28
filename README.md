@@ -31,3 +31,18 @@ This project makes use of the open-source YOLOv5 object detection library, and w
 **YOLOv5 Project Link:** [YOLOv5 GitHub](https://github.com/ultralytics/yolov5)
 
 If you encounter any issues or need more information while using YOLOv5, please refer to the YOLOv5 project's documentation and community resources.
+## Citation
+If you use this code in your research, please cite the following paper:
+
+```bash
+@ARTICLE{10365549,
+  author={Li, Jiacheng and Gao, Bin and Woo, Wai Lok and Xu, Jieyi and Liu, Lei and Zeng, Yu},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={A Novel Multispectral Fusion Defect Detection Framework With Coarse-to-Fine Multispectral Registration}, 
+  year={2024},
+  volume={73},
+  number={},
+  pages={1-13},
+  keywords={Cameras;Feature extraction;Visualization;Multimodal sensors;Fourier transforms;Detectors;YOLO;Coarse-to-fine image registration;defect detection;late fusion;multimodal;multispectral fusion},
+  doi={10.1109/TIM.2023.3344145}}
+```
